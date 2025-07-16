@@ -1,3 +1,40 @@
-.introduce{
-    
+
+
+.introduce {
+  height: 100vh;
+  width: 100dvi;
+  background-image: linear-gradient(to right, #f5f5dc, #8b4513);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduce-container {
+  width: 100%;       /* Bu satırı EKLE */
+  max-width: 700px; /* Opsiyonel: İçeriği sınırlamak istersen */
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+}
+
+.introduce-btn{
+    width: 350px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #5c2a07;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+
 }

@@ -1,0 +1,122 @@
+{
+    "Easy": [
+      {
+        "id": 1,
+        "question": "React nedir?",
+        "answers": ["Bir kütüphane", "Bir dil", "Bir çerçeve", "Bir veritabanı"],
+        "correct_answer": "Bir kütüphane",
+        "incorrect_answers": ["Bir dil", "Bir çerçeve", "Bir veritabanı"]
+      },
+      {
+        "id": 2,
+        "question": "React hangi programlama dilini kullanır?",
+        "answers": ["Python", "JavaScript", "Java", "C#"],
+        "correct_answer": "JavaScript",
+        "incorrect_answers": ["Python", "Java", "C#"]
+      },
+      {
+        "id": 3,
+        "question": "JSX nedir?",
+        "answers": ["JavaScript XML", "JavaScript Extension", "Java Syntax Extension", "Java Secure XML"],
+        "correct_answer": "JavaScript XML",
+        "incorrect_answers": ["JavaScript Extension", "Java Syntax Extension", "Java Secure XML"]
+      },
+      {
+        "id": 4,
+        "question": "Hangisi React'in temel özelliklerinden biri değildir?",
+        "answers": ["State", "Props", "Components", "Inheritance"],
+        "correct_answer": "Inheritance",
+        "incorrect_answers": ["State", "Props", "Components"]
+      },
+      {
+        "id": 5,
+        "question": "React için en yaygın kullanılan yönlendirme kütüphanesi nedir?",
+        "answers": ["React-Router", "Express", "Angular-Router", "Vue-Router"],
+        "correct_answer": "React-Router",
+        "incorrect_answers": ["Express", "Angular-Router", "Vue-Router"]
+      }
+     
+    ],
+    "Medium": [
+      {
+        "id": 6,
+        "question": "React bileşenleri hangi metodlarla tanımlanabilir?",
+        "answers": ["Sınıf ve işlev", "Yöntem ve işlev", "Sınıf ve döngü", "Yöntem ve döngü"],
+        "correct_answer": "Sınıf ve işlev",
+        "incorrect_answers": ["Yöntem ve işlev", "Sınıf ve döngü", "Yöntem ve döngü"]
+      },
+      {
+        "id": 7,
+        "question": "React'te, bileşenin durumu nasıl güncellenir?",
+        "answers": ["setState()", "updateState()", "modifyState()", "changeState()"],
+        "correct_answer": "setState()",
+        "incorrect_answers": ["updateState()", "modifyState()", "changeState()"]
+      },
+      {
+        "id": 8,
+        "question": "React'te 'key' prop'u ne için kullanılır?",
+        "answers": ["Performansı artırmak için", "Tüm elemanları seçmek için", "Stil vermek için", "JavaScript kodu yazmak için"],
+        "correct_answer": "Performansı artırmak için",
+        "incorrect_answers": ["Tüm elemanları seçmek için", "Stil vermek için", "JavaScript kodu yazmak için"]
+      },
+      {
+        "id": 9,
+        "question": "React Fragment ne işe yarar?",
+        "answers": ["DOM'a ek eleman eklememek", "Veri göndermek", "Hızlı render yapmak", "Yeni state oluşturmak"],
+        "correct_answer": "DOM'a ek eleman eklememek",
+        "incorrect_answers": ["Veri göndermek", "Hızlı render yapmak", "Yeni state oluşturmak"]
+      },
+      {
+        "id": 10,
+        "question": "Hangisi React Hooks'un bir örneğidir?",
+        "answers": ["useEffect", "useData", "useScript", "useStyle"],
+        "correct_answer": "useEffect",
+        "incorrect_answers": ["useData", "useScript", "useStyle"]
+      }
+    
+    
+    ],
+    "Hard": [
+      {
+        "id": 11,
+"question": "React'te bir bileşenin yaşam döngüsü aşamaları nelerdir?",
+        "answers": ["Başlatma, Güncelleme, Yok etme", "Oluşturma, Güncelleme, Silme", "Yükleme, Güncelleme, Temizleme", "Başlatma, Yükleme, Silme"],
+        "correct_answer": "Başlatma, Güncelleme, Yok etme",
+        "incorrect_answers": ["Oluşturma, Güncelleme, Silme", "Yükleme, Güncelleme, Temizleme", "Başlatma, Yükleme, Silme"]
+        
+      },
+      {
+        "id": 12,
+        "question": "React bileşenleri hangi metodlarla tanımlanabilir?",
+        "answers": ["Sınıf ve işlev", "Yöntem ve işlev", "Sınıf ve döngü", "Yöntem ve döngü"],
+        "correct_answer": "Sınıf ve işlev",
+        "incorrect_answers": ["Yöntem ve işlev", "Sınıf ve döngü", "Yöntem ve döngü"]
+      },
+      {
+        "id": 13,
+        "question": "React'te 'state' nedir?",
+        "answers": ["Bileşenin veri yönetimidir", "Bileşenin stil yönetimidir", "Bileşenin DOM yönetimidir", "Bileşenin olay yönetimidir"],
+        "correct_answer": "Bileşenin veri yönetimidir",
+        "incorrect_answers": ["Bileşenin stil yönetimidir", "Bileşenin DOM yönetimidir", "Bileşenin olay yönetimidir"]
+      },
+      {
+        "id": 14,
+        "question": "React bileşeninde 'props' nedir?",
+        "answers": ["Bileşene aktarılan verilerdir", "Bileşenin iç durumudur", "Bileşenin stilidir", "Bileşenin olaylarıdır"],
+        "correct_answer": "Bileşene aktarılan verilerdir",
+        "incorrect_answers": ["Bileşenin iç durumudur", "Bileşenin stilidir", "Bileşenin olaylarıdır"]
+      },
+      {
+        "id": 15,
+        "question": "React'te 'useEffect' kancası ne için kullanılır?",
+        "answers": ["Yan etkileri yönetmek için", "Bileşenlerin durumunu yönetmek için", "DOM manipülasyonu için", "CSS stil yönetimi için"],
+        "correct_answer": "Yan etkileri yönetmek için",
+        "incorrect_answers": ["Bileşenlerin durumunu yönetmek için", "DOM manipülasyonu için", "CSS stil yönetimi için"]
+      }
+     
+       
+  
+    ]
+    
+  }
+  

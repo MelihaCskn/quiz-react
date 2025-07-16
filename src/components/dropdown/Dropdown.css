@@ -1,3 +1,21 @@
 .dropdown{
     
 }
+
+.dropdown .text{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #be5c16; /* Kahverengi ton */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.15); /* Hafif gölge */
+  letter-spacing: 0.05em;
+  margin: 8px 0;
+}
+
+
+.dropdown select{
+width: 300px;
+height: 40px;
+border: 1px solid lightgray;
+border-radius: 10px;
+}
