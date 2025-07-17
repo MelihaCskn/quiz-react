@@ -1,3 +1,214 @@
-quiz{
-    
+.quiz {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #f5f5dc, #c39371);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.quiz-container {
+  max-width: 500px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-info {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #5e2e0e;
+}
+
+.answers {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.answer {
+  margin: 12px 0;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  user-select: none;
+}
+
+.answer:hover {
+  background: #e0d9c6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  color: #6b4e2d;
+  transform: translateY(-2px);
+}
+
+.answer.green {
+  background-color: #a3e9a4;
+  color: #165816;
+  font-weight: 700;
+  box-shadow: 0 0 10px #2f7a2f;
+}
+
+.answer.red {
+  background-color: #f8b4b4;
+  color: #910000;
+  font-weight: 700;
+  box-shadow: 0 0 10px #a12727;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #8b4513;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #5e2e0e;
+}
+
+/* Kalan süre için sabit ve dikkat çekici timer */
+.timer-fixed {
+  position: fixed;
+  top: 30px;
+  right: 45px;
+  background-color: #f0e6d2;
+  border: 2px solid #8b4513;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  box-shadow: 0 0 15px rgba(139, 69, 19, 0.7);
+  z-index: 1000;
+  color: #333;
+  user-select: none;
+  transition: all 0.3s ease;
+  font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+/* 10 saniye ve altına geldiğinde yanıp sönme efekti */
+.timer-fixed.low {
+  background-color: #c0392b;
+  color: white;
+  border-color: #911a1a;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.result-container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(203, 158, 70, 0.4);
+  color: #4a2c0d;
+  max-width: 600px;
+  margin: 0 auto;
+ 
+}
+
+.result-title {
+margin-top: 10px;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  text-shadow: 2px 2px 4px rgba(150, 97, 15, 0.7);
+}
+
+.result-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stat-box {
+  background-color: #fff8e1;
+  border-radius: 12px;
+  padding: 25px 35px;
+  box-shadow: 0 6px 15px rgba(82, 58, 4, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(52, 39, 9, 0.5);
+}
+
+.stat-label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #a47a3f;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 800;
+  color: #9b9080;
+}
+
+.stat-value.correct {
+  color: #2a7a2a;
+}
+
+.stat-value.success-rate {
+  color: #b36700;
+}
+
+.btn-restart {
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #8b4513;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(139, 69, 19, 0.7);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  user-select: none;
+}
+
+.btn-restart:hover {
+  background-color: #5e2e0e;
+  transform: scale(1.05);
+}
+
+.quiz-kupa {
+  width: 140px;
+  margin: 0 auto 30px;
+  display: block;
+  filter: drop-shadow(0 0 6px rgba(203, 158, 70, 0.8));
 }

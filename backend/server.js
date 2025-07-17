@@ -37,6 +37,7 @@ app.get('/api/questions/:difficulty/:amount', (req, res) => {   // API endpoint:
   });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, () => {                                          //- Backend’in portu biliniyor ve frontend erişebiliyor
   console.log(`Server ${PORT} portunda çalışıyor`);             // Sunucuyu başlat
+                                                                //Sunucu 5000 portunda çalışıyor, frontend bu portu kullanarak API çağrısı yapıyor.
 });

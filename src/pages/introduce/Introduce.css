@@ -3,7 +3,7 @@
 .introduce {
   height: 100vh;
   width: 100dvi;
-  background-image: linear-gradient(to right, #f5f5dc, #8b4513);
+  background-image: linear-gradient(to right, #f5f5dc,  #c39371);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,21 +20,32 @@
   justify-content: center;
   padding: 10px;
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 15px;
 
 }
 
-.introduce-btn{
-    width: 350px;
-    height: 50px;
-    font-size: 18px;
-    background-color: #5c2a07;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
+.introduce-btn {
+  width: 350px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #5c2a07;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
 
+  /* Geçiş efektleri */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.introduce-btn:hover,
+.introduce-btn:focus {
+  background-color: #7e3f0a;  /* Biraz daha açık/koyu renk */
+  transform: scale(1.05);      /* Hafif büyütme */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Gölge efekti */
+  outline: none;              /* Focus kenarlığını kaldır */
 }
