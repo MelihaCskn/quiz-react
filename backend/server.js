@@ -6,13 +6,13 @@ const path = require('path');          //  path: Dosya yollarını platform bağ
 const app = express();                 // Sunucu uygulaması oluşturuluyor
 const PORT = 5000;
 
-app.use(cors());   // CORS sorunlarını önlemek için- Bu satır sayesinde, localhost:3000 (React) → localhost:5000 (backend) veri çekebilir.
+app.use(cors());   // CORS sorunlarını önlemek için-Bu satır backend’de CORS’u aktif ediyor.
 
 const questionsPath = path.join(__dirname, 'questions.json');    // JSON dosyasının bulunduğu tam yol
 
 
 app.get('/api/questions/:difficulty/:amount', (req, res) => {   // API endpoint: /api/questions/:difficulty/:amount
-  const { difficulty, amount } = req.params;                    //  “/api/questions/easy/5 gibi bir istek gelirse, bu isteği şu şekilde işle.”  
+  const { difficulty, amount } = req.params;                    // Backend bu endpoint’leri tanımlar, frontend de çağırır. 
 
 
   
